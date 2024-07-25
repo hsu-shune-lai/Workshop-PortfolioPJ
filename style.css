@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --black: #0f0f0f;
+  --dark-purple: #2e1950;
+  --light-purple: #8b5acf;
+  --button-color: #58308f;
+  --border: 1rem solid rgba(157, 238, 200, 0.2);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+body {
+  background-color: var(--white);
+  color: var(--black);
+}
+html {
+  font-size: 62%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 8%;
+  background: var(--dark-purple);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logoName {
+  font-size: 2.5rem;
+  color: var(--white);
+  font-weight: 500;
+}
+header .logoName span {
+  color: var(--light-purple);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+}
+.navbar a {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-right: 4rem;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: var(--light-purple);
+}
+
+#contact-btn {
+  border-radius: 5px;
+  background-color: var(--button-color);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.5rem;
+  width: 90px;
+  height: 40px;
+  margin-right: 7rem;
+  display: flex;
+  align-items: center;
+}
+#contact-btn:hover {
+  background-color: var(--light-purple);
+}
+#menuIcon {
+  font-size: 3.5rem;
+  color: var(--white);
+  display: none;
+}
+
+/* home section */
+section {
+  min-height: 100vh;
+  padding: 6rem 9% 2rem;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-img img {
+  width: 35vw;
+}
+.home-content h3 {
+  font-size: 3.3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.home-content h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.home-content p {
+  font-size: 1.6rem;
+}
+span {
+  color: var(--light-purple);
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2.7rem;
+  background: var(--button-color);
+  border-radius: 4rem;
+  box-shadow: var(--box-shadow);
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: 600;
+  margin-top: 20px;
+}
+.btn:hover {
+  color: var(--light-purple);
+}
+
+/* about section */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-img {
+  width: 35vw;
+}
+.about-title {
+  font-size: 4rem;
+  color: var(--black);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.about-content h3 {
+  font-size: 3.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--dark-purple);
+}
+.about-content h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.about-content p {
+  font-size: 1.6rem;
+}
+
+/* Project section */
+.portfolio h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  background-color: var(--light-purple);
+  padding: 3rem;
+  margin: 2rem;
+  border-radius: 8px;
+  width: 200px;
+  text-align: left;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.viewAll-btn {
+  padding: 1rem 2.7rem;
+  background: var(--button-color);
+  border-radius: 4rem;
+  box-shadow: var(--box-shadow);
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+
+/* Services section */
+.services {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.services h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: var(--light-purple);
+  padding: 3rem;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Skills section */
+.skills {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.skills h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  background-color: var(--light-purple);
+  padding: 3rem;
+  border-radius: 8px;
+  width: 150px;
+  text-align: center;
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Contact section */
+.contact {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.contact h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  max-width: 500px;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--black);
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  padding: 1rem 2.7rem;
+  background: var(--button-color);
+  border-radius: 4rem;
+  box-shadow: var(--box-shadow);
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.contact-form button:hover {
+  color: var(--light-purple);
+}
+
+/* Footer section */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--dark-purple);
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  font-size: 2.5rem;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.footer-logo .highlight {
+  color: var(--light-purple);
+}
+
+.footer-copy {
+  text-align: center;
+  color: var(--white);
+  font-size: 1.3rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: var(--white);
+  font-size: 2rem;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  #menuIcon {
+    display: block;
+  }
+  .navbar {
+    display: none;
+    flex-direction: column;
+    background: var(--dark-purple);
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .navbar.active {
+    display: flex;
+  }
+  .navbar a {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  #contact-btn {
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  .profile-img img,
+  .about-img {
+    width: 20vw;
+  }
+
+  .home-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .home-content h3,
+  .about-content h3 {
+    font-size: 2.5rem;
+  }
+
+  .home-content p,
+  .about-content p {
+    font-size: 1.4rem;
+  }
+}
