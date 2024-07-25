@@ -63,29 +63,11 @@ header .logoName span {
 .navbar a:hover {
   color: var(--light-purple);
 }
-
-#contact-btn {
-  border-radius: 5px;
-  background-color: var(--button-color);
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  color: var(--white);
-  font-size: 1.5rem;
-  width: 90px;
-  height: 40px;
-  margin-right: 7rem;
-  display: flex;
-  align-items: center;
-}
-#contact-btn:hover {
-  background-color: var(--light-purple);
-}
 #menuIcon {
   font-size: 3.5rem;
   color: var(--white);
   display: none;
 }
-
 /* home section */
 section {
   min-height: 100vh;
@@ -312,7 +294,12 @@ span {
 .contact-form button:hover {
   color: var(--light-purple);
 }
-
+.scroll-offset {
+  display: block;
+  position: relative;
+  top: -80px; /* Adjust this value based on your header height */
+  visibility: hidden;
+}
 /* Footer section */
 footer {
   display: flex;
@@ -359,7 +346,7 @@ footer {
     background: var(--dark-purple);
     width: 100%;
     position: absolute;
-    top: 100%;
+    top: 80%;
     left: 0;
   }
   .navbar.active {
@@ -369,10 +356,23 @@ footer {
     margin: 1rem 0;
     text-align: center;
   }
-  #contact-btn {
-    margin: 0;
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .footer-logo {
+    margin-bottom: 1rem;
+  }
+  .footer-copy {
+    margin-bottom: 1rem;
+  }
+  .social-links {
+    justify-content: center;
   }
 }
+
 @media (max-width: 600px) {
   .profile-img img,
   .about-img {
@@ -380,7 +380,7 @@ footer {
   }
 
   .home-content h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 
   .home-content h3,
